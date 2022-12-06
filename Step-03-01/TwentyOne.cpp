@@ -5,12 +5,13 @@
 
 #include <iostream>
 #include <random>
+#include <list>
 using namespace std;
 
 int main() {
   // define card sets
-  int oppCardSet[6];
-  int userCardSet[6];
+  list<int> oppCardSet;
+  list<int> userCardSet;
 
   // mersenne_twister
   random_device rseed;
@@ -19,11 +20,28 @@ int main() {
 
   // generate oppenents cards
   for (int count = 0; count < 2; count++) {
-    card = idist(rgen);
-
+    int card = idist(rgen);
+    oppCardSet.push_back(card);
   }
 
-  cout << "Opponents Deck: \n";
+  // generate users cards
+  for (int count = 0; count < 2; count++) {
+    int card = idist(rgen);
+    userCardSet.push_back(card);
+  }
+
+  // print opponents deck
+  cout << "Opponents Deck:" << endl;
+  for (auto const &count: oppCardSet) {
+    cout << count << " ";
+  }
+  cout << "\n";
+
+  cout << "Your Deck:" << endl;
+  for (auto const &count: userCardSet) {
+    cout << count << " ";
+  }
+  cout << "\n";
 
   return 0;
 }
