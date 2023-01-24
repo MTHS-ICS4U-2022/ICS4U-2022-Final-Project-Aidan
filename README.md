@@ -12,3 +12,5 @@
 <li>Enter "./main" into the terminal while in the "MainGame" directory.</li>
 <li>Enjoy the game!</li>
 </ul>
+
+<b>If permission is denied, fork this repository and use github ssh.</b>
