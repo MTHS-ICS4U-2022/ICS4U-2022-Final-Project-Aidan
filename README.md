@@ -1,6 +1,5 @@
 # ICS4U-2022-Final-Project-Aidan
 
-/* border */
 hr.dashed {
   border-top: 3px dashed #bbb;
 }
