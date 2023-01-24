@@ -1,9 +1,11 @@
 # ICS4U-2022-Final-Project-Aidan
 
+<style>
 hr.dashed {
   border-top: 3px dashed #bbb;
 }
-
+</style>
+  
 ### Blackjack in Terminal, Modeled after Resident Evil 7's "21"
 
 <hr class="dashed">
