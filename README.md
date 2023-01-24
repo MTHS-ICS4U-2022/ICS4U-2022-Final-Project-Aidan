@@ -2,7 +2,7 @@
 
 ### Blackjack in Terminal, Modeled after Resident Evil 7's "21"
 
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 <b>To play this game, follow these instructions:</b>
 <ul>
