@@ -1,7 +1,7 @@
 // deck class for twenty-one game
 //
 // by Aidan Lalonde-Novales
-// Last Updated 1/18/2023
+// Last Updated 1/23/2023
 
 // libraries
 #include <iostream>
@@ -17,19 +17,12 @@ class Deck {
   private:
     vector<int> cards;
 
-  // public: card constructor 
+  // public: card constructor, shuffle the cards, deal a card
   public:
     Deck() {
       for (int count = 1; count <= 11; count++) {
 	cards.push_back(count);
       }
-    }
-
-    void printCards() {
-      for (int i : cards) {
-        cout << i << " ";
-      }
-      cout << endl;
     }
 
     void shuffleCards() {
