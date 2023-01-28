@@ -19,7 +19,7 @@ using namespace std;
 /**
  * REVEALS THE CARDS OF THE OPPONENT, SHOWS WHO WON, SUBTRACTS LIVES
  */
-void revealCards(Deck &deck, Player &user, Opponent &opp, int target) {
+void revealCards(Deck &deck, Player &user, Opponent &opp, int TARGET) {
   cout << "\nFinal Hands:" << endl;
   cout << "\n=============================================\n" << endl;
   // print opp info
@@ -36,12 +36,12 @@ void revealCards(Deck &deck, Player &user, Opponent &opp, int target) {
   cout << "Result...\n" << endl;
 
   // check if win condition is fulfilled, else if tie, else lose
-  if (user.getSum() > opp.getSum() && user.getSum() <= target) {
+  if (user.getSum() > opp.getSum() && user.getSum() <= TARGET) {
     cout << "★ You Win! ★" << endl;
-  } else if (user.getSum() <= target && opp.getSum() > target) {
+  } else if (user.getSum() <= TARGET && opp.getSum() > TARGET) {
     cout << "★ You Win! ★" << endl;
   } else if (user.getSum() < opp.getSum() &&
-    user.getSum () > target && opp.getSum() > target) {
+    user.getSum () > TARGET && opp.getSum() > TARGET) {
     cout << "★ You Win! ★" << endl;
   } else if (user.getSum() == opp.getSum()) {
     cout << "★ You Tied! ★" << endl;
@@ -134,7 +134,7 @@ void initialCardDeal(Deck &deck, Player &user, Opponent &opp) {
 int main() {
   // initialize variables and classes
   bool gameStarted = false;
-  const int target = 21;
+  const int TARGET = 21;
   Deck deck;
   Player user;
 
@@ -174,7 +174,7 @@ int main() {
     // report turns remaining
     cout << turns << " Turns Remaining." << endl;
   }
-  revealCards(deck, user, opp, target);
+  revealCards(deck, user, opp, TARGET);
 
   cout << "Done." << endl;
 
